@@ -2,12 +2,8 @@ package com.hotmart.demonstration.controllers;
 
 import com.hotmart.demonstration.dtos.ProjectSkillDto;
 import com.hotmart.demonstration.models.ProjectSkillModel;
-import com.hotmart.demonstration.repositories.ProjectSkillRepository;
 import com.hotmart.demonstration.services.ProjectSkillService;
-
 import javax.validation.Valid;
-
-import org.apache.catalina.startup.ClassLoaderFactory.Repository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,7 +12,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 

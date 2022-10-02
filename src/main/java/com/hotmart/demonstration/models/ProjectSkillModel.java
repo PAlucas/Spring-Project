@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "SKILLS")
-public class ProjectSkillModel {
+public class ProjectSkillModel implements Serializable{
     //Serialization to grant safety of an object state
     private static final long serialVersionUID = 1L;
 
