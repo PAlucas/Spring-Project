@@ -6,24 +6,24 @@ import javax.validation.constraints.Size;
 public class ProjectSkillDto {
     @NotBlank
     @Size(max = 255)
-    private String skillName;
+    private String skillname;
     @NotBlank
     @Size(max = 280)
-    private String skillDescription;
+    private String skilldescription;
 
     public String getSkillName(){
-        return skillName;
+        return skillname;
     } 
 
     public String getSkillDescription(){
-        return skillDescription;
+        return skilldescription;
     } 
 
     public void setSkillName(String skillName){
-        this.skillName = skillName;
+        this.skillname = skillName;
     } 
 
     public void setSkillDescription(String skillDescription){
-        this.skillDescription = skillDescription;
+        this.skilldescription = skillDescription;
     } 
 }

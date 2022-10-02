@@ -1,36 +1,37 @@
 package com.hotmart.demonstration.models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "PROJECTSKILLS")
+@Table(name = "SKILLS")
 public class ProjectSkillModel {
     //Serialization to grant safety of an object state
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private Integer id;
     @Column(nullable = false, unique = true, length = 255)
-    private String skillName;
+    private String skillname;
     @Column(nullable = false, length = 280)
-    private String skillDescription;
+    private String skilldescription;
 
     public String getSkillName(){
-        return skillName;
+        return skillname;
     } 
 
     public String getSkillDescription(){
-        return skillDescription;
+        return skilldescription;
     } 
 
     public void setSkillName(String skillName){
-        this.skillName = skillName;
+        this.skillname = skillName;
     } 
 
     public void setSkillDescription(String skillDescription){
-        this.skillDescription = skillDescription;
+        this.skilldescription = skillDescription;
     } 
-    
+     
     
 }
