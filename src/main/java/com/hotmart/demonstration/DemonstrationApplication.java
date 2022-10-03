@@ -13,9 +13,6 @@ public class DemonstrationApplication {
 		SpringApplication.run(DemonstrationApplication.class, args);
 	}
 
-	@GetMapping("/")
-	public String olaMundo(){
-		return "Olá Mundo!";
-	}
+
 
 }

@@ -1,5 +1,8 @@
 package com.hotmart.demonstration.services;
 
+import java.util.List;
+import java.util.Optional;
+
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,5 +23,17 @@ public class ProjectSkillService {
     public boolean existsBySkillName(String skillName) {
         return projectSkillRepository.existsBySkillname(skillName);
     }
+
+    public List<ProjectSkillModel> findAll(){
+        return projectSkillRepository.findAll();
+    }
+
+    public Optional<ProjectSkillModel> findById(Integer id) {
+        return projectSkillRepository.findById(id);
+    }
+
+    public void delete(ProjectSkillModel projectSkillModel) {
+    }
+    
 
 }
