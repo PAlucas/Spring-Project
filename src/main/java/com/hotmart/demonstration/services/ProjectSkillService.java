@@ -32,7 +32,11 @@ public class ProjectSkillService {
         return projectSkillRepository.findById(id);
     }
 
-    public void delete(ProjectSkillModel projectSkillModel) {
+    @Transactional
+    public String delete(ProjectSkillModel projectSkillModel) {
+        String name = projectSkillModel.getSkillName();
+        projectSkillRepository.delete(projectSkillModel);
+        return name;
     }
     
 
